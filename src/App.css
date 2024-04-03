@@ -1,38 +1,108 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: background-color .75s ease;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #530d44;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark-mode .App-link {
+  color: #c59ebd;
+}
+
+.light-mode {
+  background-color: white; /* Light mode background color */
+}
+
+.dark-mode {
+  background-color: #333; /* Dark mode background color */
+}
+
+.logo-container {
+  /* display: flex; */
+  justify-content: flex-end; /* Align logo to the right */
+  margin-right: 50px; /* Adjust the margin as needed */
+}
+
+.logo-img {
+  width: 400px; /* Adjust the width of the logo image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.intro-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Example height for demonstration */
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  flex: 1; /* Take up remaining space */
+  padding: 20px; /* Adjust padding as needed */
+  color: #333; /* Default text color */
+}
+
+.dark-mode .text {
+  color: #ccc; /* Text color for dark mode */
+}
+
+.social-links {
+  margin-top: 20px; /* Add space above the links */
+}
+
+.social-link {
+  margin-right: 20px; /* Add space between the links */
+}
+
+.social-link i {
+  font-size: 24px; /* Increase the size of the icons */
+}
+
+.toggle {
+  display: inline-block;
+}
+
+.toggle input[type="checkbox"] {
+  display: none;
+}
+
+.toggle .toggle-slider {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  width: 50px; /* Adjust the width of the slider */
+  height: 25px; /* Adjust the height of the slider */
+  background-color: #ccc; /* Background color for slider */
+  border-radius: 25px; /* Half of the height for rounded corners */
+  padding: 2px; /* Adjust padding as needed */
+  transition: background-color 0.3s ease;
+}
+
+.toggle input[type="checkbox"]:checked + .toggle-slider {
+  background-color: #007bff; /* Background color for slider when on */
+}
+
+.toggle-slider svg {
+  width: 20px; /* Adjust the size of the icon */
+  height: 20px; /* Adjust the size of the icon */
+  color: #fff; /* Color of the icon */
+  margin-left: 3px; /* Adjust margin as needed */
+}
+
+.toggle-slider svg:last-child {
+  margin-left: auto;
+}
+
+.nala-image {
+  width: 250px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
 }
