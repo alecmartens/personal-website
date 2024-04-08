@@ -1,11 +1,17 @@
-import React  from "react";
+import React from "react";
 import "../../styles/resume.css"
 import Spacer from "../spacer";
+import DarkModeToggle from "../darkmodetoggle";
 
 const Resume = ({ isDarkMode, setIsDarkMode }) => {
   return (
+
     <div className="resume-container">
       <Spacer height="50px" isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} showHomeButton showDownloadButton showDarkModeButton />
+      <DarkModeToggle
+        isDarkMode={isDarkMode}
+        setIsDarkMode={setIsDarkMode}
+      />
       <div className="resume-content">
         <Education />
         <WorkExperience />

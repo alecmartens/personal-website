@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import DownloadResume from "./resume/downloadresume";
-import DarkModeToggle from "./darkmodetoggle";
 import "../styles/darkmodetoggle.css"
 
 
@@ -11,11 +10,9 @@ const Spacer = ({
   height,
   width,
   isDarkMode,
-  setIsDarkMode,
   showHomeButton,
   showDownloadButton,
   showResumeButton,
-  showDarkModeButton,
 }) => {
   const spacerStyle = {
     height: height || "20px",
@@ -47,14 +44,6 @@ const Spacer = ({
           </Link>
         )}
       </div>
-      {showDarkModeButton && (
-        <div style={{ buttonContainerStyle, justifyContent: "center" }}>
-          <DarkModeToggle
-            isDarkMode={isDarkMode}
-            setIsDarkMode={setIsDarkMode}
-          />
-        </div>
-      )}
       <div style={{ ...buttonContainerStyle, right: "20px" }}>
         {showDownloadButton && <DownloadResume />}
         {showResumeButton && (
