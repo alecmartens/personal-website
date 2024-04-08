@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faFileAlt } from "@fortawesome/free-solid-svg-icons";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 import "../styles/darkmodetoggle.css"
 
 
@@ -10,7 +10,6 @@ const Spacer = ({
   width,
   isDarkMode,
   showHomeButton,
-  showDownloadButton,
 }) => {
   const spacerStyle = {
     height: height || "20px",
