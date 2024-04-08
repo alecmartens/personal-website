@@ -32,17 +32,17 @@
   height: auto; /* Maintain aspect ratio */
 }
 
-.intro-page {
+/* .intro-page {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh; /* Example height for demonstration */
+  height: 60vh;
 }
 
 .intro-container {
   display: flex;
   align-items: center;
-}
+} */
 
 .text {
   flex: 1; /* Take up remaining space */

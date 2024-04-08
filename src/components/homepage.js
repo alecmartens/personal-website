@@ -15,7 +15,7 @@ const HomePage = ({ isDarkMode, setIsDarkMode }) => {
         showHomeButton
         showResumeButton
         showDarkModeButton 
-      />{" "}
+      />
       <IntroPage />
       <Spacer height="50px" isDarkMode={isDarkMode} /> <ProjectsPage />
       <Spacer height="50px" isDarkMode={isDarkMode} /> <AboutMePage />

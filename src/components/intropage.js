@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./logo";
-import DarkModeToggle from "./darkmodetoggle";
+import "../styles/intropage.css"
 
 const IntroPage = () => {
   return (
@@ -11,7 +11,7 @@ const IntroPage = () => {
           <h1>Alec Martens.</h1>
           <p>
             I enjoy solving problems and making efficient solutions through
-            coding.
+            coding and collaboration.
           </p>
           <br></br>
           <div className="social-links">
