@@ -14,59 +14,47 @@
 }
 
 .light-mode {
-  background-color: white; /* Light mode background color */
+  background-color: white; 
 }
 
 .dark-mode {
-  background-color: #333; /* Dark mode background color */
+  background-color: #333; 
 }
 
 .logo-container {
-  /* display: flex; */
-  justify-content: flex-end; /* Align logo to the right */
-  margin-right: 50px; /* Adjust the margin as needed */
+  justify-content: flex-end; 
+  margin-right: 50px; 
 }
 
 .logo-img {
-  width: 400px; /* Adjust the width of the logo image */
-  height: auto; /* Maintain aspect ratio */
+  width: 400px; 
+  height: auto; 
 }
-
-/* .intro-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
-}
-
-.intro-container {
-  display: flex;
-  align-items: center;
-} */
 
 .text {
-  flex: 1; /* Take up remaining space */
-  padding: 20px; /* Adjust padding as needed */
-  color: #333; /* Default text color */
+  flex: 1;
+  padding: 20px; 
+  color: #333; 
 }
 
 .dark-mode .text {
-  color: #ccc; /* Text color for dark mode */
+  color: #ccc;
 }
 
 .social-links {
-  margin-top: 20px; /* Add space above the links */
+  margin-top: 20px;
 }
 
 .social-link {
-  margin-right: 20px; /* Add space between the links */
+  margin-right: 20px; 
 }
 
 .social-link i {
-  font-size: 24px; /* Increase the size of the icons */
+  font-size: 24px; 
 }
 
 .nala-image {
   width: 250px; 
   height: auto; 
+  border-radius: 60px;
 }

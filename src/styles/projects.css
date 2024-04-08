@@ -1,9 +1,9 @@
 .projects {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
-    gap: 30px; /* Gap between cards */
-    padding-left: 30px; /* Add left padding */
-    padding-right: 30px; /* Add right padding */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+    padding-left: 30px;
+    padding-right: 30px; 
   }
   
   .project-card {
