@@ -12,7 +12,7 @@ const AboutMePage = () => {
           <h1>About Me 🤵</h1>
           <p>
             I graduated with a B.S. in Computer Science and a Minor in
-            Mathematics from Ohio University in 2022
+            Mathematics from Ohio University in 2022.
           </p>
           <a href="https://ohio.edu">
             <img
@@ -25,16 +25,6 @@ const AboutMePage = () => {
           <p>
             I am currently working as a Mobile Automation Developer for
             Huntington Bank.
-          </p>
-          <p>
-            You can find my&nbsp;
-            <Link
-              to="/resume"
-              className="App-link"
-              onClick={() => window.scrollTo(0, 0)}
-            >
-              resume here.
-            </Link>
           </p>
           <a href="https://www.huntington.com/">
           <img

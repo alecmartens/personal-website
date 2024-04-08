@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Spacer from "./components/spacer";
 import Footer from "./components/footer";
-import ResumePage from "./components/resume/resumepage";
 import HomePage from "./components/homepage";
 
 function App() {
@@ -18,15 +17,6 @@ function App() {
               path="/"
               element={
                 <HomePage
-                  isDarkMode={isDarkMode}
-                  setIsDarkMode={setIsDarkMode}
-                />
-              }
-            />
-            <Route
-              path="/resume"
-              element={
-                <ResumePage
                   isDarkMode={isDarkMode}
                   setIsDarkMode={setIsDarkMode}
                 />

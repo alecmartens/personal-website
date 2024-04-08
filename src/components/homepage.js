@@ -14,7 +14,6 @@ const HomePage = ({ isDarkMode, setIsDarkMode }) => {
         isDarkMode={isDarkMode}
         setIsDarkMode={setIsDarkMode}
         showHomeButton
-        showResumeButton
       />
       <DarkModeToggle
             isDarkMode={isDarkMode}
