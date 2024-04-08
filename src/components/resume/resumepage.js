@@ -12,7 +12,7 @@ const Resume = ({ isDarkMode, setIsDarkMode }) => {
         isDarkMode={isDarkMode}
         setIsDarkMode={setIsDarkMode}
       />
-      <div className="resume-content">
+      <div className="text">
         <Education />
         <WorkExperience />
         <ProjectExperience />
@@ -46,9 +46,9 @@ const WorkExperience = () => {
         title="Automation Developer Analyst"
         duration="February 2024-Current"
         description={[
-          "Utilize tools like Appium and TestNG in a Java framework to fully automate regression scenarios and new features in the mobile app.",
-          "Led the development and research for API testing with Postman and the conversion to ReadyAPI",
-          "Monitor automation test job runs and analyze and fix failures"
+          "Utilize tools like Appium and TestNG in a Java framework to fully automate regression scenarios and new features in the mobile application.",
+          "Led the development and research for API testing with Postman and the conversion to ReadyAPI.",
+          "Monitor automation test job runs and analyze and fix failures."
         ]}
       />
       <Experience
@@ -57,9 +57,9 @@ const WorkExperience = () => {
         duration="January 2023-January 2024"
         description={[
           "Work on a scrum team to write manual test cases, condition user data, and perform functional testing.",
-          "Report bugs and defects, track their status, and test the fixes",
+          "Report bugs and defects, track their status, and test the fixes.",
           "Utilize tools like Appium and TestNG in a Java framework to fully automate regression scenarios and new features in the mobile app.",
-          "Collaborate with developers and business to identify and resolve issues",
+          "Collaborate with developers and business to identify and resolve issues.",
         ]}
       />
       <Experience
@@ -91,14 +91,18 @@ const ProjectExperience = () => {
       <Project
         title="College Commerce Full-Stack Application"
         year="August 2022"
-        description="Created a full stack application designed for college students to easily buy/sell goods and services."
-        technologies={["React JS", "mySQL", "NodeJS", "Spring Boot"]}
+        description={["Created a full stack application designed for college students to easily buy/sell goods and services.",
+        "Implemented user authentication, allowing users to sign up, log in, and manage their accounts.",
+        "Developed a user-friendly interface for browsing, listing, and purchasing items/services, with support for image uploads.",
+        "Integrated payment processing functionality with Stripe API to facilitate secure transactions between buyers and sellers.",]}
+        technologies={["React JS", "mySQL", "NodeJS", "Spring Boot", "Stripe API"]}
       />
       <Project
         title="Senior Design Project"
         year="2021-2022"
-        description="Team Leader of a 4-person team creating a Room Availability mobile/web application that allows users to easily check if a study room at Ohio University is occupied."
-        technologies={["React JS", "mySQL", "NodeJS"]}
+        description={["Team Leader of a 4-person team creating a Room Availability mobile/web application that allows users to easily check if a study room at Ohio University is occupied.",
+          "Was in contact with client, planned meetings, conducted testing, implemented the Building/Classroom page",]}
+        technologies={["React JS", "mySQL", "NodeJS", "Raspberry Pi"]}
       />
     </div>
   );
@@ -108,13 +112,13 @@ const Qualifications = () => {
   return (
     <div className="section">
       <h2>Qualifications</h2>
-      <ul>
+      <p>
         <li>Computer and Technical:</li>
         <li>C/C#/C++/Java/Python/Rust Programming</li>
-        <li>Android Studio and Flutter</li>
+        <li>Android Studio, Flutter, React development</li>
         <li>SQL and Firebase Databases</li>
         <li>Selenium, Appium, Cucumber, TestNG</li>
-      </ul>
+      </p>
     </div>
   );
 };
@@ -125,11 +129,11 @@ const Experience = ({ company, title, duration, description }) => {
       <h3>{company}</h3>
       <p>{title}</p>
       <p>{duration}</p>
-      <ul>
+      <p>
         {description.map((desc, index) => (
           <li key={index}>{desc}</li>
         ))}
-      </ul>
+      </p>
     </div>
   );
 };
@@ -139,7 +143,11 @@ const Project = ({ title, year, description, technologies }) => {
     <div className="project">
       <h3>{title}</h3>
       <p>{year}</p>
-      <p>{description}</p>
+      <p>
+        {description.map((desc, index) => (
+          <li key={index}>{desc}</li>
+        ))}
+      </p>
       <p>Technologies used: {technologies.join(", ")}</p>
     </div>
   );

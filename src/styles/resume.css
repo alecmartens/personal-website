@@ -4,6 +4,11 @@
 
 .resume-content {
     margin-top: 20px;
+    color: #333;
+}
+
+.dark-mode .resume-content {
+    color: #ccc;
 }
 
 .section {
@@ -22,6 +27,12 @@
 
 .experience ul,
 .project ul {
-  list-style-type: disc;
-  padding-left: 20px;
+    list-style-type: disc;
+    /* padding-left: 55px; */
+    text-align: 'center',
+}
+
+.experience ul li {
+    text-align: left;
+    /* Align the text left within each list item */
 }
