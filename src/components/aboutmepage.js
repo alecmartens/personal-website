@@ -1,5 +1,4 @@
 import React from "react";
-import attackCatImage from "../assets/attackCat_1.png";
 import ohioUniversityFormalGreen from "../assets/Ohio University-formal-green.png";
 import huntington from "../assets/huntington.svg";
 import "../styles/aboutme.css";

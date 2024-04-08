@@ -1,12 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import IntroPage from "./components/intropage";
-import AboutMePage from "./components/aboutmepage";
-import ProjectsPage from "./components/projectspage";
-import DarkModeToggle from "./components/darkmodetoggle";
 import Spacer from "./components/spacer";
-import NalaCowboy from "./components/nalacowboy";
 import Footer from "./components/footer";
 import ResumePage from "./components/resume/resumepage";
 import HomePage from "./components/homepage";

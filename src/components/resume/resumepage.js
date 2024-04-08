@@ -1,31 +1,26 @@
 import React, { useState } from "react";
-import DownloadResume from "./downloadresume";
+import "../../styles/resume.css"
 import Spacer from "../spacer";
 import DarkModeToggle from "../darkmodetoggle";
 
 const Resume = ({ isDarkMode, setIsDarkMode }) => {
-  // const [isDarkMode, setIsDarkMode] = useState(false);
-
   return (
-    <div className="resume">
-      <Spacer
-        height="50px"
-        isDarkMode={isDarkMode}
-        showHomeButton
-        showDownloadButton
-      />
+    <div className="resume-container">
+      <Spacer height="50px" isDarkMode={isDarkMode} showHomeButton showDownloadButton />
       <DarkModeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Education />
-      <WorkExperience />
-      <ProjectExperience />
-      <Qualifications />
+      <div className="resume-content">
+        <Education />
+        <WorkExperience />
+        <ProjectExperience />
+        <Qualifications />
+      </div>
     </div>
   );
 };
 
 const Education = () => {
   return (
-    <div className="text">
+    <div className="section">
       <h2>Education</h2>
       <p>
         Ohio University, Athens, OH
@@ -40,16 +35,27 @@ const Education = () => {
 
 const WorkExperience = () => {
   return (
-    <div className="text">
+    <div className="section">
       <h2>Work Experience</h2>
+      <Experience
+        company="Huntington Bank, Easton OH"
+        title="Automation Developer Analyst"
+        duration="February 2024-Current"
+        description={[
+          "Utilize tools like Appium and TestNG in a Java framework to fully automate regression scenarios and new features in the mobile app.",
+          "Led the development and research for API testing with Postman and the conversion to ReadyAPI",
+          "Monitor automation test job runs and analyze and fix failures"
+        ]}
+      />
       <Experience
         company="Huntington Bank (Contractor), Easton OH"
         title="Mobile QA"
-        duration="January 2023-Current"
+        duration="January 2023-January 2024"
         description={[
           "Work on a scrum team to write manual test cases, condition user data, and perform functional testing.",
+          "Report bugs and defects, track their status, and test the fixes",
           "Utilize tools like Appium and TestNG in a Java framework to fully automate regression scenarios and new features in the mobile app.",
-          "Led the development and research for API testing with Postman and the conversion to ReadyAPI",
+          "Collaborate with developers and business to identify and resolve issues",
         ]}
       />
       <Experience
@@ -76,7 +82,7 @@ const WorkExperience = () => {
 
 const ProjectExperience = () => {
   return (
-    <div className="text">
+    <div className="section">
       <h2>Project Experience</h2>
       <Project
         title="College Commerce Full-Stack Application"
@@ -90,14 +96,13 @@ const ProjectExperience = () => {
         description="Team Leader of a 4-person team creating a Room Availability mobile/web application that allows users to easily check if a study room at Ohio University is occupied."
         technologies={["React JS", "mySQL", "NodeJS"]}
       />
-      {/* Add other projects here */}
     </div>
   );
 };
 
 const Qualifications = () => {
   return (
-    <div className="text">
+    <div className="section">
       <h2>Qualifications</h2>
       <ul>
         <li>Computer and Technical:</li>
@@ -112,7 +117,7 @@ const Qualifications = () => {
 
 const Experience = ({ company, title, duration, description }) => {
   return (
-    <div className="text">
+    <div className="experience">
       <h3>{company}</h3>
       <p>{title}</p>
       <p>{duration}</p>
@@ -127,7 +132,7 @@ const Experience = ({ company, title, duration, description }) => {
 
 const Project = ({ title, year, description, technologies }) => {
   return (
-    <div className="text">
+    <div className="project">
       <h3>{title}</h3>
       <p>{year}</p>
       <p>{description}</p>

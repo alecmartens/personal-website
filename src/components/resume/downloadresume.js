@@ -13,11 +13,12 @@ const DownloadResume = () => {
   };
 
   return (
-    <div className="download-resume" style={{ marginLeft: "100px" }}>
+    <div className="download-resume" style={{}}>
       {" "}
       <button onClick={handleDownload}>
         {" "}
-        <FontAwesomeIcon icon={faDownload} /> Download Resume
+        <FontAwesomeIcon icon={faDownload} />
+        <span style={{ marginLeft: "7px", marginRight: "20px" }}>Download</span>
       </button>
     </div>
   );
