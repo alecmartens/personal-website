@@ -1,13 +1,15 @@
 .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two cards per row */
-    gap: 20px; /* Gap between cards */
+    gap: 30px; /* Gap between cards */
+    padding-left: 30px; /* Add left padding */
+    padding-right: 30px; /* Add right padding */
   }
   
   .project-card {
     background-color: #f8f8f8;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 15px;
+    border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
@@ -16,7 +18,7 @@
   }
   
   .project-card p {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   
   .project-card a {
