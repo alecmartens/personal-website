@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 const DarkModeToggle = ({ isDarkMode, setIsDarkMode }) => {

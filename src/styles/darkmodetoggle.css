@@ -1,0 +1,33 @@
+.toggle {
+    display: inline-block;
+}
+
+.toggle input[type="checkbox"] {
+    display: none;
+}
+
+.toggle .toggle-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 25px;
+    padding: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle input[type="checkbox"]:checked+.toggle-slider {
+    background-color: #007bff;
+}
+
+.toggle-slider svg {
+    color: #fff;
+}
+
+.toggle-slider svg:last-child {
+    margin-left: auto;
+}
