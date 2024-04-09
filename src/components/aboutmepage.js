@@ -2,7 +2,6 @@ import React from "react";
 import ohioUniversityFormalGreen from "../assets/Ohio University-formal-green.png";
 import huntington from "../assets/huntington.svg";
 import "../styles/aboutme.css";
-import { Link } from "react-router-dom";
 
 const AboutMePage = () => {
   return (
