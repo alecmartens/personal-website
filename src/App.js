@@ -9,6 +9,19 @@ import NotFoundPage from "./components/notfoundpage"
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  React.useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        alert("This website is best viewed on a desktop.");
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <Router>
       <div className={`App ${isDarkMode ? "dark-mode" : "light-mode"}`}>
