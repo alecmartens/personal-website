@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Spacer from "./components/spacer";
 import Footer from "./components/footer";
 import HomePage from "./components/homepage";
+import NotFoundPage from "./components/notfoundpage"
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -22,6 +23,7 @@ function App() {
                 />
               }
             />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>
         <Spacer height="50px" isDarkMode={isDarkMode} /> <Footer />
