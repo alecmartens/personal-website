@@ -5,13 +5,13 @@
   transition: background-color .75s ease;
 }
 
-.App-link {
+/* .App-link {
   color: #ADD8E6;
 }
 
 .dark-mode .App-link {
   color: #2a3a57;
-}
+} */
 
 .light-mode {
   background-color: white; 

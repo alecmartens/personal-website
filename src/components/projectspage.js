@@ -37,9 +37,17 @@ const ProjectsPage = () => {
                 href={project.html_url}
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ color: '#007BFF' }} 
+                onMouseOver={(e) => e.currentTarget.style.color = '#FF0000'} 
+                onFocus={(e) => e.currentTarget.style.color = '#FF0000'}
+                onMouseOut={(e) => e.currentTarget.style.color = '#007BFF'} 
+                onBlur={(e) => e.currentTarget.style.color = '#007BFF'}
+                onMouseDown={(e) => e.currentTarget.style.color = '#0000FF'} 
+                onMouseUp={(e) => e.currentTarget.style.color = '#007BFF'} 
               >
                 View on GitHub
               </a>
+
             </div>
           ))}
         </div>
