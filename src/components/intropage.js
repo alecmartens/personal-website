@@ -9,9 +9,10 @@ const IntroPage = () => {
         <div className="text">
           <p1>👋 Hello! My name is</p1>
           <h1>Alec Martens.</h1>
+          <p>I am a software developer from Ohio.</p>
           <p>
             I enjoy solving problems and making efficient solutions through
-            coding and collaboration.
+            coding and collaboration. I also enjoy testing and automating these solutions.
           </p>
           <br></br>
           <div className="social-links">
