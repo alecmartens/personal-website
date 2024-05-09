@@ -12,7 +12,7 @@ function App() {
   React.useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
-        alert("This website is best viewed on a desktop.");
+        alert("This website is best viewed on a desktop/bigger screen.");
       }
     };
 
