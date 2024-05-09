@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alec Martens</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script>
-      // Function to toggle dark mode
-      function toggleDarkMode() {
-        document.documentElement.classList.toggle("dark-mode");
-      }
 
-      // Check if dark mode is enabled in localStorage
-      const isDarkMode = localStorage.getItem("darkMode") === "true";
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alec Martens Portfolio</title>
+  <meta name="description" content="Alec Martens' personal portfolio website.">
 
-      // If dark mode is enabled, apply it
-      if (isDarkMode) {
-        toggleDarkMode();
-      }
-    </script>
-  </body>
+  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
+  <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest">
+  <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <script>
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle("dark-mode");
+    }
+
+    // Check if dark mode is enabled in localStorage
+    const isDarkMode = localStorage.getItem("darkMode") === "true";
+
+    // If dark mode is enabled, apply it
+    if (isDarkMode) {
+      toggleDarkMode();
+    }
+  </script>
+</body>
+
 </html>
